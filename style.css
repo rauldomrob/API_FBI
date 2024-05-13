@@ -292,10 +292,27 @@ footer {
     padding: 5px 8px;
     background-color: rgb(216, 235, 255);
     border: 2px solid var(--dark-blue);
+    color: var(--dark-blue);
     font-size: 18px;
     font-weight: 600;
     border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
 }
+
+#paginacion button:disabled {
+    color: rgb(125, 125, 125);
+    cursor: not-allowed;
+    border-color: rgb(20, 20, 20);
+}
+#paginacion button :hover,
+#paginacion button:active {
+    background-color: rgb(194, 212, 231);
+    border: 2px solid black;
+    color: black;
+}
+
+
 
 .todo_detalles_fugitivo {
     padding: 40px 0;
@@ -639,7 +656,7 @@ footer {
         flex-direction: column;
         padding: 0;
         margin: 0;
-        width: 275px;
+        width: 300px;
     }
 
     .sexo,
@@ -647,10 +664,23 @@ footer {
     .pelo {
         border: none;
         padding: 10px 0;
+        width: 290px;
+        height: 35px;
     }
 
-    #sex {
+    .sexo label,
+    .ojos label,
+    .pelo label{
+        font-weight: 600;
+    }
+
+    .ojos #eyes{
+        margin-left: 11px;
+    }
+    
+    .sexo #sex {
         width: 186px;
+        margin-left: 26px;
     }
 
     .boton_filtrar {
