@@ -677,6 +677,12 @@ footer {
         font-weight: 600;
     }
 
+    .sexo input,
+    .ojos input,
+    .pelo input{
+        width: 186px;
+    }
+
     .ojos #eyes{
         margin-left: 11px;
     }
