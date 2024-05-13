@@ -763,22 +763,18 @@ footer {
         font-size: 24px;
     }
 
-    .filtros1,
-    .filtros2,
-    .ojos,
-    .pelo {
-        width: 100%;
+    .sexo input,
+    .ojos input,
+    .pelo input{
+        width: 156px;
     }
 
-    #eyes,
-    #hair,
-    #sex {
-        width: 60%;
+    .sexo #sex {
+        width: 156px;
     }
 
-    .filtros1,
-    .filtros2 {
-        padding-left: 13px;
+    .filtros1, .filtros2{
+        justify-content: space-around;
     }
 
     .logo_header img {
